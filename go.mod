@@ -9,3 +9,10 @@ require (
 	gorm.io/driver/sqlite v1.5.2
 	gorm.io/gorm v1.25.4
 )
+
+replace (
+    go-simple-api/configs => ./configs
+    go-simple-api/internal/handlers => ./internal/handlers
+    go-simple-api/internal/models => ./internal/models
+    go-simple-api/internal/services => ./internal/services
+)
