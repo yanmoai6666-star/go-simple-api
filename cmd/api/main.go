@@ -4,10 +4,11 @@ import (
 	"fmt"
 	"log"
 
-	"../configs"
-	"../internal/handlers"
-	"../internal/models"
-	"../internal/services"
+	"go-simple-api/configs"
+	"go-simple-api/internal/handlers"
+	"go-simple-api/internal/models"
+	"go-simple-api/internal/services"
+
 	"github.com/gin-gonic/gin"
 )
 

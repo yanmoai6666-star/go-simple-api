@@ -3,7 +3,7 @@ package services
 import (
 	"errors"
 
-	"../models"
+	"go-simple-api/internal/models"
 	"gorm.io/gorm"
 )
 

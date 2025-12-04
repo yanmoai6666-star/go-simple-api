@@ -1,15 +1,15 @@
 package integration
 
 import (
-	"bytes"
 	"encoding/json"
 	"net/http"
 	"net/http/httptest"
 	"testing"
 
-	"../../internal/handlers"
-	"../../internal/models"
-	"../../internal/services"
+	"go-simple-api/internal/handlers"
+	"go-simple-api/internal/models"
+	"go-simple-api/internal/services"
+
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
 	"gorm.io/driver/sqlite"

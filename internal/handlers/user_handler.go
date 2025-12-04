@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"../models"
-	"../services"
+	"go-simple-api/internal/models"
+	"go-simple-api/internal/services"
 	"github.com/gin-gonic/gin"
 )
 
