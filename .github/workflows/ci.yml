@@ -1,0 +1,38 @@
+name: Go CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      # 检出代码
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 设置 Go 环境
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.21'
+          cache: true
+
+      # 下载依赖
+      - name: Download dependencies
+        run: go mod download
+
+      # 运行测试
+      - name: Run tests
+        run: go test ./...
+
+      # 构建项目
+      - name: Build
+        run: go build -o app ./cmd/api
+
+      # 检查构建结果
+      - name: Verify build
+        run: ls -la app
