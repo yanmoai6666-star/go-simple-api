@@ -14,6 +14,9 @@ A simple RESTful API built with Go, Gin framework, and GORM.
 
 ```
 go-simple-api/
+├── .github/
+│   └── workflows/
+│       └── ci.yml   
 ├── cmd/
 │   └── api/
 │       └── main.go              # API entry point
