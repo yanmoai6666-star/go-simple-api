@@ -29,14 +29,15 @@ go-simple-api/
 │   │   └── product.go
 │   └── services/               # Business logic
 │       ├── user_service.go
+│       ├── user_service_test.go
 │       └── product_service.go
+│       └── product_service_test.go
 ├── pkg/
 │   └── utils/                  # Utility functions
 │       └── validation.go
 ├── tests/
 │   └── integration/            # Integration tests
 │       └── health_test.go
-├── .env                        # Environment variables
 ├── go.mod                      # Go module dependencies
 ├── go.sum                      # Dependency checksums
 └── README.md                   # This file
